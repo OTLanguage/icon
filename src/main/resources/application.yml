@@ -1,1 +1,11 @@
-
+spring:
+  datasource:
+    url: ${{ secrets.URI }}
+    username: ${{ secrets.USER_NAME }}
+    password: ${{ secrets.PASSWORD }}
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL10DialectDialect
