@@ -1,3 +1,5 @@
+server:
+  port: ${PORT:5432}
 spring:
   datasource:
     url: ${{ secrets.URI }}
